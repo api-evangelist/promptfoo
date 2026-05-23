@@ -1,0 +1,190 @@
+aid: promptfoo
+url: https://raw.githubusercontent.com/api-evangelist/promptfoo/refs/heads/main/apis.yml
+name: Promptfoo
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- LLM Evaluation
+- Red Teaming
+- AI Security
+- Guardrails
+- Open Source
+- CLI
+- Developer Tools
+description: Promptfoo is an open-source LLM evaluation and red-teaming framework distributed as a TypeScript CLI and Node.js
+  library under the MIT license. Developers use it to evaluate prompts, models, and RAG pipelines side by side, run automated
+  red team attacks against LLM applications, scan code for LLM vulnerabilities in IDE and CI, and proxy Model Context Protocol
+  traffic. Promptfoo also operates a commercial Enterprise platform at promptfoo.app for teams that need centralized governance,
+  remediation reports, and shared evaluation history.
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+- aid: promptfoo:promptfoo-cli
+  name: Promptfoo CLI
+  tags:
+  - CLI
+  - LLM Evaluation
+  - Open Source
+  - Testing
+  humanURL: https://www.promptfoo.dev/docs/getting-started/
+  properties:
+  - url: https://www.promptfoo.dev/docs/getting-started/
+    type: GettingStarted
+  - url: https://www.promptfoo.dev/docs/usage/command-line/
+    type: Documentation
+  - url: https://github.com/promptfoo/promptfoo
+    type: SourceCode
+  description: The Promptfoo CLI is the primary entry point for running prompt and model evaluations from the command line
+    or CI. It is installable via npm, Homebrew, pip, or npx and reads a YAML configuration to fan out evaluations across
+    providers including OpenAI, Anthropic, Azure, Bedrock, Google, and local Ollama models. Outputs include a local web
+    viewer, JSON reports, and CI-friendly exit codes.
+- aid: promptfoo:promptfoo-library
+  name: Promptfoo Node.js Library
+  tags:
+  - SDK
+  - Node.js
+  - Library
+  - LLM Evaluation
+  humanURL: https://www.promptfoo.dev/docs/usage/node-package/
+  properties:
+  - url: https://www.promptfoo.dev/docs/usage/node-package/
+    type: Documentation
+  - url: https://www.npmjs.com/package/promptfoo
+    type: SDK
+  description: The Promptfoo Node.js package exposes the same evaluation engine programmatically so developers can embed
+    evaluations, assertions, and dataset runs directly into JavaScript and TypeScript applications and pipelines.
+- aid: promptfoo:promptfoo-red-team
+  name: Promptfoo Red Team
+  tags:
+  - Red Teaming
+  - AI Security
+  - Vulnerability Scanning
+  - Adversarial Testing
+  humanURL: https://www.promptfoo.dev/docs/red-team/
+  properties:
+  - url: https://www.promptfoo.dev/docs/red-team/
+    type: Documentation
+  description: Promptfoo Red Team generates adversarial test cases against LLM applications targeting prompt injection,
+    jailbreaks, PII leakage, bias, and other OWASP LLM Top 10 categories. Runs from the CLI and produces structured findings
+    that can be triaged in the Promptfoo viewer or Enterprise platform.
+- aid: promptfoo:promptfoo-enterprise
+  name: Promptfoo Enterprise
+  tags:
+  - Enterprise
+  - SaaS
+  - Governance
+  - Team Collaboration
+  humanURL: https://www.promptfoo.dev/docs/enterprise/
+  properties:
+  - url: https://www.promptfoo.dev/docs/enterprise/
+    type: Documentation
+  - url: https://promptfoo.app/
+    type: ApplicationURL
+  description: Promptfoo Enterprise is the commercial SaaS at promptfoo.app providing centralized evaluation history, shared
+    red team findings, remediation reports, role-based access control, SSO, and team-wide governance over LLM evaluation
+    workflows.
+- aid: promptfoo:promptfoo-mcp-proxy
+  name: Promptfoo MCP Proxy
+  tags:
+  - MCP
+  - Proxy
+  - AI Security
+  - Model Context Protocol
+  humanURL: https://www.promptfoo.dev/docs/usage/mcp/
+  properties:
+  - url: https://www.promptfoo.dev/docs/usage/mcp/
+    type: Documentation
+  description: MCP Proxy is Promptfoo's security gateway for Model Context Protocol traffic, inspecting tool calls and responses
+    flowing between agents and MCP servers to enforce policies and surface adversarial activity.
+- aid: promptfoo:promptfoo-code-scanning
+  name: Promptfoo Code Scanning
+  tags:
+  - Code Scanning
+  - IDE
+  - CI/CD
+  - Static Analysis
+  humanURL: https://www.promptfoo.dev/docs/usage/code-scanning/
+  properties:
+  - url: https://www.promptfoo.dev/docs/usage/code-scanning/
+    type: Documentation
+  description: Promptfoo Code Scanning analyzes source code in IDEs and CI pipelines to find LLM-related vulnerabilities
+    including unsafe prompt construction, missing guardrails, and risky tool usage in agent code.
+common:
+- type: Website
+  url: https://www.promptfoo.dev/
+- type: Documentation
+  url: https://www.promptfoo.dev/docs/
+- type: APIReference
+  url: https://www.promptfoo.dev/docs/api-reference/
+- type: GettingStarted
+  url: https://www.promptfoo.dev/docs/getting-started/
+- type: Blog
+  url: https://www.promptfoo.dev/blog/
+- type: Pricing
+  url: https://www.promptfoo.dev/pricing/
+- type: Login
+  url: https://promptfoo.app/
+- type: GitHubRepository
+  url: https://github.com/promptfoo/promptfoo
+- type: LinkedIn
+  url: https://www.linkedin.com/company/promptfoo/
+- type: Discord
+  url: https://discord.gg/promptfoo
+- type: Contact
+  url: https://www.promptfoo.dev/contact/
+- type: License
+  url: https://github.com/promptfoo/promptfoo/blob/main/LICENSE
+- type: Features
+  data:
+  - name: Side-by-Side Evaluation
+    description: Compare prompts and models across providers with assertion-based scoring.
+  - name: Red Teaming
+    description: Automated adversarial test generation across prompt injection, jailbreaks, PII, bias, and more.
+  - name: RAG Evaluation
+    description: Evaluate retrieval-augmented generation pipelines for accuracy, faithfulness, and groundedness.
+  - name: CI/CD Integration
+    description: Run evaluations on every pull request with exit-code-driven gating.
+  - name: Local Web Viewer
+    description: Inspect evaluation runs and diffs in a local browser UI without sending data to a third party.
+  - name: MCP Proxy
+    description: Inspect and govern Model Context Protocol traffic between agents and tool servers.
+  - name: Code Scanning
+    description: Static analysis of LLM application code in IDEs and CI to surface risky patterns.
+  - name: Self-Hosting
+    description: Open source CLI and library run locally with no telemetry to Promptfoo required.
+- type: UseCases
+  data:
+  - name: Prompt Iteration
+    description: Compare prompt variants against datasets to choose the best-performing version.
+  - name: Model Selection
+    description: Benchmark candidate models across providers before committing to one in production.
+  - name: RAG Quality Assurance
+    description: Evaluate chunking, retrieval, and generation choices in RAG systems.
+  - name: AI Red Teaming
+    description: Probe pre-production LLM applications for adversarial failure modes.
+  - name: Continuous LLM Testing
+    description: Wire evaluations and red team scans into CI so regressions block deploys.
+- type: Integrations
+  data:
+  - name: OpenAI
+    description: Native provider for OpenAI Chat Completions, Assistants, and Responses APIs.
+  - name: Anthropic
+    description: Native provider for Anthropic Claude models.
+  - name: Azure OpenAI
+    description: Provider for Azure-hosted OpenAI deployments.
+  - name: AWS Bedrock
+    description: Provider for Anthropic, Meta, Mistral, and other models on Bedrock.
+  - name: Google Vertex AI
+    description: Provider for Gemini and other models on Vertex.
+  - name: Ollama
+    description: Provider for locally hosted open source models via Ollama.
+  - name: LangChain
+    description: Evaluate LangChain chains and agents through custom providers.
+  - name: GitHub Actions
+    description: Run promptfoo evaluations in CI on every pull request.
+  - name: Model Context Protocol
+    description: MCP Proxy and MCP provider support for agentic workflows.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
