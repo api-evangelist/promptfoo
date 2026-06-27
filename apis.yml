@@ -51,7 +51,7 @@ apis:
   - url: https://www.promptfoo.dev/docs/usage/node-package/
     type: Documentation
   - url: https://www.npmjs.com/package/promptfoo
-    type: SDK
+    type: SDKs
   description: The Promptfoo Node.js package exposes the same evaluation engine programmatically so developers can embed
     evaluations, assertions, and dataset runs directly into JavaScript and TypeScript applications and pipelines.
 - aid: promptfoo:promptfoo-red-team
