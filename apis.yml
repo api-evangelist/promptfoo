@@ -111,6 +111,10 @@ apis:
   description: Promptfoo Code Scanning analyzes source code in IDEs and CI pipelines to find LLM-related vulnerabilities
     including unsafe prompt construction, missing guardrails, and risky tool usage in agent code.
 common:
+- type: TrustCenter
+  url: security/promptfoo-trust-center.yml
+- type: DomainSecurity
+  url: security/promptfoo-domain-security.yml
 - type: Website
   url: https://www.promptfoo.dev/
 - type: Documentation
