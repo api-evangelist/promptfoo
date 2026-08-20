@@ -20,6 +20,14 @@ tags:
 - Red Teaming
 - AI Security
 - Guardrails
+- Open-Source
+- CLI
+- Developer Tools
+tags_raw:
+- LLM Evaluation
+- Red Teaming
+- AI Security
+- Guardrails
 - Open Source
 - CLI
 - Developer Tools
@@ -36,6 +44,11 @@ apis:
 - aid: promptfoo:promptfoo-cli
   name: Promptfoo CLI
   tags:
+  - CLI
+  - LLM Evaluation
+  - Open-Source
+  - Testing
+  tags_raw:
   - CLI
   - LLM Evaluation
   - Open Source
@@ -87,6 +100,11 @@ apis:
   name: Promptfoo Enterprise
   tags:
   - Enterprise
+  - Software-as-a-Service
+  - Governance
+  - Team Collaboration
+  tags_raw:
+  - Enterprise
   - SaaS
   - Governance
   - Team Collaboration
@@ -102,6 +120,10 @@ apis:
 - aid: promptfoo:promptfoo-mcp-proxy
   name: Promptfoo MCP Proxy
   tags:
+  - MCP
+  - Proxy
+  - AI Security
+  tags_raw:
   - MCP
   - Proxy
   - AI Security
