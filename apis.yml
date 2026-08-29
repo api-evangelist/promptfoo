@@ -2,6 +2,18 @@ aid: promptfoo
 url: https://raw.githubusercontent.com/api-evangelist/promptfoo/refs/heads/main/apis.yml
 name: Promptfoo
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
@@ -150,6 +162,14 @@ apis:
     vulnerabilities including unsafe prompt construction, missing guardrails, and risky tool usage in
     agent code.
 common:
+- type: IssueTracker
+  url: https://github.com/promptfoo/promptfoo/issues
+- type: SecurityPolicy
+  url: https://github.com/promptfoo/promptfoo/blob/main/SECURITY.md
+- type: CodeOfConduct
+  url: https://github.com/promptfoo/promptfoo/blob/main/CODE_OF_CONDUCT.md
+- type: ContributionGuide
+  url: https://github.com/promptfoo/promptfoo/blob/main/CONTRIBUTING.md
 - type: TrustCenter
   url: security/promptfoo-trust-center.yml
 - type: DomainSecurity
