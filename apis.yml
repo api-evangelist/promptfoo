@@ -3,16 +3,21 @@ url: https://raw.githubusercontent.com/api-evangelist/promptfoo/refs/heads/main/
 name: Promptfoo
 type: Index
 deliveryModel:
-  model: unknown
-  open_source: unknown
+  model: open-core
+  license: MIT
+  license_evidence:
+    repo: promptfoo/promptfoo
+    spdx: MIT
+    stars: 25443
+  open_source: true
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Open core · an OSS project plus a commercial hosted product
+  confidence: medium
   source:
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: free
@@ -32,7 +37,7 @@ tags:
 - Red Teaming
 - AI Security
 - Guardrails
-- Open-Source
+- Open Source
 - CLI
 - Developer Tools
 tags_raw:
@@ -43,6 +48,7 @@ tags_raw:
 - Open Source
 - CLI
 - Developer Tools
+- Open-Source
 description: Promptfoo is an open-source LLM evaluation and red-teaming framework distributed as a TypeScript
   CLI and Node.js library under the MIT license. Developers use it to evaluate prompts, models, and RAG
   pipelines side by side, run automated red team attacks against LLM applications, scan code for LLM vulnerabilities
@@ -58,13 +64,14 @@ apis:
   tags:
   - CLI
   - LLM Evaluation
-  - Open-Source
+  - Open Source
   - Testing
   tags_raw:
   - CLI
   - LLM Evaluation
   - Open Source
   - Testing
+  - Open-Source
   humanURL: https://www.promptfoo.dev/docs/getting-started/
   properties:
   - url: https://www.promptfoo.dev/docs/getting-started/
