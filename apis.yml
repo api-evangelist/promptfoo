@@ -169,6 +169,12 @@ apis:
     vulnerabilities including unsafe prompt construction, missing guardrails, and risky tool usage in
     agent code.
 common:
+- type: Plans
+  url: plans/promptfoo-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/promptfoo-rate-limits.yml
+- type: FinOps
+  url: finops/promptfoo-finops.yml
 - type: IssueTracker
   url: https://github.com/promptfoo/promptfoo/issues
 - type: SecurityPolicy
