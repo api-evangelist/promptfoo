@@ -1,4 +1,4 @@
-# promptfoo
+# Promptfoo
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,115 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Promptfoo — open-source LLM eval and red-teaming framework
+Promptfoo is an open-source LLM evaluation and red-teaming framework distributed as a TypeScript CLI and Node.js library under the MIT license. Developers use it to evaluate prompts, models, and RAG pipelines side by side, run automated red team attacks against LLM applications, scan code for LLM vulnerabilities in IDE and CI, and proxy Model Context Protocol traffic. Promptfoo also operates a commercial Enterprise platform at promptfoo.app for teams that need centralized governance, remediation reports, and shared evaluation history.
+
+**Areas:** LLM Evaluation · Red Teaming · AI Security · Guardrails · Open Source · CLI · Developer Tools
+
+## Promptfoo on APIs.io
+
+Everything profiled for Promptfoo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/promptfoo/](https://apis.io/providers/promptfoo/)** — or go straight to one of the APIs or properties below.
+
+### APIs (6)
+
+- [Promptfoo CLI](https://apis.io/apis/promptfoo/promptfoo-cli/) — The Promptfoo CLI is the primary entry point for running prompt and model evaluations from the command line or CI. It is installable via npm, Homebrew, pip,…
+- [Promptfoo Node.js Library](https://apis.io/apis/promptfoo/promptfoo-library/) — The Promptfoo Node.js package exposes the same evaluation engine programmatically so developers can embed evaluations, assertions, and dataset runs directly…
+- [Promptfoo Red Team](https://apis.io/apis/promptfoo/promptfoo-red-team/) — Promptfoo Red Team generates adversarial test cases against LLM applications targeting prompt injection, jailbreaks, PII leakage, bias, and other OWASP LLM…
+- [Promptfoo Enterprise](https://apis.io/apis/promptfoo/promptfoo-enterprise/) — Promptfoo Enterprise is the commercial SaaS at promptfoo.app providing centralized evaluation history, shared red team findings, remediation reports,…
+- [Promptfoo MCP Proxy](https://apis.io/apis/promptfoo/promptfoo-mcp-proxy/) — MCP Proxy is Promptfoo's security gateway for Model Context Protocol traffic, inspecting tool calls and responses flowing between agents and MCP servers to…
+- [Promptfoo Code Scanning](https://apis.io/apis/promptfoo/promptfoo-code-scanning/) — Promptfoo Code Scanning analyzes source code in IDEs and CI pipelines to find LLM-related vulnerabilities including unsafe prompt construction, missing…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Promptfoo Domain Security](https://apis.io/security/promptfoo/promptfoo-domain-security/)
+- [Promptfoo Trust Center](https://apis.io/security/promptfoo/promptfoo-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Promptfoo Plans Pricing](https://apis.io/plans/promptfoo/promptfoo-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Promptfoo Rate Limits](https://apis.io/rate-limits/promptfoo/promptfoo-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Promptfoo Finops](https://apis.io/finops/promptfoo/promptfoo-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.promptfoo.dev/)
+- [Documentation](https://www.promptfoo.dev/docs/)
+- [Getting started](https://www.promptfoo.dev/docs/getting-started/)
+- [API reference](https://www.promptfoo.dev/docs/api-reference/)
+- [Pricing](https://www.promptfoo.dev/pricing/)
+- [Changelog](https://github.com/promptfoo/promptfoo/releases)
+- [Blog](https://www.promptfoo.dev/blog/)
+- [GitHub](https://github.com/promptfoo)
+- [Status](https://status.promptfoo.app)
+
+## API Evangelist rating
+
+**Kin Score 36.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 6.5 |
+| Contract governance | 0.0 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 30.3 |
+
+**Agent readiness 1.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/promptfoo/](https://apis.io/providers/promptfoo/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Promptfoo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/promptfoo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
